@@ -1,0 +1,23 @@
+feat(auth): implement JWT based authentication
+
+- Added jsonwebtoken library to dependencies
+- Created login and register API routes
+- Implemented middleware to protect secure endpoints
+- Handled invalid token exceptions gracefully
+
+fix(ui): correct z-index for dropdown menu
+
+The dropdown menu was appearing behind the main content area when scrolled. 
+Increased the z-index to 50 for the navigation bar to fix this layout issue.
+
+docs(readme): add installation instructions
+
+Updated the README.md with detailed steps on how to install dependencies and run the project locally.
+
+refactor(db): extract database connection logic
+
+Moved the mongoose connection setup from app.js to a dedicated config/db.js file for better separation of concerns.
+
+chore(deps): bump express from 4.17.1 to 4.18.2
+
+Updated express to address a moderate security vulnerability related to body parsing.
