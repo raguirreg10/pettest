@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="app-container">
         <header>
@@ -28,22 +30,24 @@
         </main>
     </div>
 
-    <!-- Modal for Add/Edit -->
     <div id="modal-backdrop" class="modal-backdrop hidden">
         <div class="modal">
             <header class="modal-header">
                 <h2 id="modal-title">Add New Pet</h2>
-                <button id="close-modal-btn" class="icon-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+                <button id="close-modal-btn" class="icon-btn" aria-label="Close modal"><i
+                        class="fas fa-times"></i></button>
             </header>
             <form id="pet-form">
                 <input type="hidden" id="pet-id">
                 <div class="form-group">
                     <label for="pet-name">Name</label>
-                    <input type="text" id="pet-name" required pattern="[a-zA-Z\s]+" title="Only letters and spaces are allowed" placeholder="e.g. Bella">
+                    <input type="text" id="pet-name" required pattern="[a-zA-Z\s]+"
+                        title="Only letters and spaces are allowed" placeholder="e.g. Bella">
                 </div>
                 <div class="form-group">
                     <label for="pet-species">Species</label>
-                    <input type="text" id="pet-species" required pattern="[a-zA-Z\s]+" title="Only letters and spaces are allowed" placeholder="e.g. Dog, Cat, Bird">
+                    <input type="text" id="pet-species" required pattern="[a-zA-Z\s]+"
+                        title="Only letters and spaces are allowed" placeholder="e.g. Dog, Cat, Bird">
                 </div>
                 <div class="form-group">
                     <label for="pet-age">Age (Years)</label>
@@ -58,8 +62,10 @@
                     <select id="pet-apt-reason">
                         <option value="Annual Chonker Checkup">Annual Chonker Checkup ⚖️</option>
                         <option value="Vaccination (Microchip Upgrade)">Vaccination (Microchip Upgrade) 📡</option>
-                        <option value="Nail Trimming (Edward Scissorhands Mode)">Nail Trimming (Edward Scissorhands Mode) ✂️</option>
-                        <option value="Teeth Cleaning (Stinky Breath Remediation)">Teeth Cleaning (Stinky Breath Remediation) 🦷</option>
+                        <option value="Nail Trimming (Edward Scissorhands Mode)">Nail Trimming (Edward Scissorhands
+                            Mode) ✂️</option>
+                        <option value="Teeth Cleaning (Stinky Breath Remediation)">Teeth Cleaning (Stinky Breath
+                            Remediation) 🦷</option>
                         <option value="Existential Dread Therapy">Existential Dread Therapy 🛋️</option>
                         <option value="Belly Rub Consultation">Belly Rub Consultation 🐾</option>
                         <option value="Flea Eviction Notice">Flea Eviction Notice 🪲</option>
@@ -76,4 +82,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
