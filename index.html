@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet Paw Atelier</title>
+    <meta
+      name="description"
+      content="Velvet Paw Atelier offers modern pet accessories with thoughtful design, playful details, and everyday comfort."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Velvet Paw Atelier home">
+          <span class="brand-mark">VP</span>
+          <span>
+            <strong>Velvet Paw Atelier</strong>
+            <small>Modern Pet Accessories</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav">
+          <a href="#shop">Shop</a>
+          <a href="#collection">Collection</a>
+          <a href="#story">Story</a>
+          <a href="#visit">Visit</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Designed for curious companions</p>
+            <h1>Accessories with personality, comfort, and a sharp point of view.</h1>
+            <p class="hero-text">
+              Curated collars, travel gear, loungers, and play essentials for pets whose style matters as much as their comfort.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#collection">Browse the collection</a>
+              <a class="button button-secondary" href="#story">Our design story</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Shop highlights">
+              <li>
+                <strong>32</strong>
+                <span>limited-run pieces</span>
+              </li>
+              <li>
+                <strong>4.9/5</strong>
+                <span>average customer love</span>
+              </li>
+              <li>
+                <strong>48h</strong>
+                <span>dispatch on ready-to-ship items</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal reveal-delay">
+            <div class="hero-card hero-card-main">
+              <img src="assets/hero-pets.svg" alt="Illustrated cat and dog wearing stylish accessories" />
+            </div>
+            <div class="hero-card hero-card-note">
+              <p>New drop</p>
+              <strong>Spring promenade set</strong>
+              <span>Botanical collar, woven leash, travel tote</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-ribbon reveal">
+          <p>Soft-touch materials</p>
+          <p>Small-batch designs</p>
+          <p>Machine-wash friendly picks</p>
+          <p>Gift-ready packaging</p>
+        </section>
+
+        <section id="shop" class="categories section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Shop by mood</p>
+            <h2>A collection built for everyday rituals.</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <h3>Walks</h3>
+              <p>Leashes, harness accents, and compact carry gear for city loops and weekend paths.</p>
+            </article>
+            <article class="category-card reveal reveal-delay">
+              <h3>Lounging</h3>
+              <p>Cloud-soft beds, woven blankets, and supportive shapes that look at home in a styled room.</p>
+            </article>
+            <article class="category-card reveal reveal-delay-2">
+              <h3>Play</h3>
+              <p>Textured toys and enrichment pieces that feel elevated without losing their sense of fun.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="collection" class="collection section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured pieces</p>
+            <h2>Signature accessories for polished pets.</h2>
+          </div>
+
+          <div class="filters reveal" role="tablist" aria-label="Product filters">
+            <button class="filter-button is-active" data-filter="all" type="button">All</button>
+            <button class="filter-button" data-filter="walk" type="button">Walk</button>
+            <button class="filter-button" data-filter="rest" type="button">Rest</button>
+            <button class="filter-button" data-filter="travel" type="button">Travel</button>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card reveal" data-category="walk">
+              <img src="assets/collar-bloom.svg" alt="Illustrated floral pet collar" />
+              <div class="product-copy">
+                <p class="product-tag">Walk</p>
+                <h3>Bloomline Collar</h3>
+                <p>Botanical print collar with brushed brass hardware and soft cotton lining.</p>
+                <div class="product-meta">
+                  <span>$28</span>
+                  <button type="button">View details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay" data-category="walk">
+              <img src="assets/leash-sunset.svg" alt="Illustrated woven leash" />
+              <div class="product-copy">
+                <p class="product-tag">Walk</p>
+                <h3>Sunset Woven Leash</h3>
+                <p>Durable woven leash in warm gradient tones with a comfortable loop grip.</p>
+                <div class="product-meta">
+                  <span>$34</span>
+                  <button type="button">View details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal reveal-delay-2" data-category="travel">
+              <img src="assets/travel-tote.svg" alt="Illustrated travel tote for pet accessories" />
+              <div class="product-copy">
+                <p class="product-tag">Travel</p>
+                <h3>Weekend Paw Tote</h3>
+                <p>Structured carry tote with treats pocket, collapsible bowl sleeve, and wipe-clean finish.</p>
+                <div class="product-meta">
+                  <span>$46</span>
+                  <button type="button">View details</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card reveal" data-category="rest">
+              <img src="assets/lounge-bed.svg" alt="Illustrated rounded pet bed" />
+              <div class="product-copy">
+                <p class="product-tag">Rest</p>
+                <h3>Crescent Lounge Bed</h3>
+                <p>Rounded lounge bed with supportive bolsters and a removable boucle cover.</p>
+                <div class="product-meta">
+                  <span>$72</span>
+                  <button type="button">View details</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="story" class="story section-grid">
+          <div class="story-panel reveal">
+            <p class="eyebrow">Why we made this shop</p>
+            <h2>We wanted pet essentials that felt edited, tactile, and worth leaving out on display.</h2>
+          </div>
+
+          <div class="story-grid">
+            <article class="story-card reveal">
+              <h3>Material-first</h3>
+              <p>We combine sturdy construction with soft finishes so pieces work hard without looking utilitarian.</p>
+            </article>
+            <article class="story-card reveal reveal-delay">
+              <h3>Room-aware design</h3>
+              <p>Every silhouette is chosen to sit naturally in modern interiors instead of fighting with them.</p>
+            </article>
+            <article class="story-card reveal reveal-delay-2">
+              <h3>Made for repeat use</h3>
+              <p>Simple cleaning, durable stitching, and adaptable sizing keep daily routines easy.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="testimonials section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">From pet parents</p>
+            <h2>Small details that people notice immediately.</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote class="testimonial-card reveal">
+              <p>“The leash feels premium, but it is the color palette that sold me. It looks better than half my own accessories.”</p>
+              <footer>Marina and Sol</footer>
+            </blockquote>
+            <blockquote class="testimonial-card reveal reveal-delay">
+              <p>“Our cat actually uses the lounge bed, which is unusual, and it still looks polished in the living room.”</p>
+              <footer>Ethan and Juniper</footer>
+            </blockquote>
+            <blockquote class="testimonial-card reveal reveal-delay-2">
+              <p>“The tote keeps treats, wipes, and a toy organized. It solved the usual walk-time chaos.”</p>
+              <footer>Priya and Nori</footer>
+            </blockquote>
+          </div>
+        </section>
+
+        <section id="visit" class="visit section-grid reveal">
+          <div>
+            <p class="eyebrow">Visit or inquire</p>
+            <h2>Bring the shop online now, then expand later.</h2>
+            <p>
+              This version is intentionally lightweight: plain HTML, CSS, and JavaScript with no database dependency.
+              It is a strong starting point for a brochure-style storefront or for adding ecommerce later.
+            </p>
+          </div>
+
+          <form class="contact-card">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="hello@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="Tell us what you'd like to stock or customize"></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send inquiry</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Velvet Paw Atelier</p>
+        <p>Static storefront concept for a modern pet accessory brand.</p>
+        <p>&copy; <span id="year"></span> All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
