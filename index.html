@@ -1,89 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple, premium CRUD application to manage your pets">
-    <title>Pet Manager</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Paw & Petal | Premium Pet Accessories</title>
+    <meta name="description" content="Discover premium pet accessories at Paw & Petal. High-quality dog collars, minimalist cat trees, and more.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="app-container">
-        <header>
-            <h1><i class="fas fa-paw"></i> Pet Manager Application</h1>
-            <div style="display: flex; gap: 1rem;">
-                <button id="add-btn" class="btn primary-btn"><i class="fas fa-plus"></i> Add Pet</button>
-                <a href="login.html" class="btn secondary-btn" style="text-decoration: none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
-            </div>
-        </header>
 
-        <main>
-            <div id="pets-grid" class="pets-grid">
-                <!-- Pet cards will be rendered here -->
-            </div>
-            <div id="empty-state" class="empty-state hidden">
-                <i class="fas fa-cat"></i>
-                <h2>No pets yet</h2>
-                <p>Click the "Add Pet" button to add your first furry friend!</p>
-            </div>
-        </main>
-    </div>
-
-    <div id="modal-backdrop" class="modal-backdrop hidden">
-        <div class="modal">
-            <header class="modal-header">
-                <h2 id="modal-title">Add New Pet</h2>
-                <button id="close-modal-btn" class="icon-btn" aria-label="Close modal"><i
-                        class="fas fa-times"></i></button>
-            </header>
-            <form id="pet-form">
-                <input type="hidden" id="pet-id">
-                <div class="form-group">
-                    <label for="pet-name">Name</label>
-                    <input type="text" id="pet-name" required pattern="[a-zA-Z\s]+"
-                        title="Only letters and spaces are allowed" placeholder="e.g. Bella">
-                </div>
-                <div class="form-group">
-                    <label for="pet-species">Species</label>
-                    <input type="text" id="pet-species" required pattern="[a-zA-Z\s]+"
-                        title="Only letters and spaces are allowed" placeholder="e.g. Dog, Cat, Bird">
-                </div>
-                <div class="form-group">
-                    <label for="pet-age">Age (Years)</label>
-                    <input type="number" id="pet-age" required min="0" placeholder="e.g. 3">
-                </div>
-                <div class="form-group">
-                    <label for="pet-apt-date">Next VET Appointment (Optional)</label>
-                    <input type="date" id="pet-apt-date">
-                </div>
-                <div class="form-group" id="pet-apt-reason-group" style="display: none;">
-                    <label for="pet-apt-reason">Reason for Visit</label>
-                    <select id="pet-apt-reason">
-                        <option value="Annual Chonker Checkup">Annual Chonker Checkup ⚖️</option>
-                        <option value="Vaccination (Microchip Upgrade)">Vaccination (Microchip Upgrade) 📡</option>
-                        <option value="Nail Trimming (Edward Scissorhands Mode)">Nail Trimming (Edward Scissorhands
-                            Mode) ✂️</option>
-                        <option value="Teeth Cleaning (Stinky Breath Remediation)">Teeth Cleaning (Stinky Breath
-                            Remediation) 🦷</option>
-                        <option value="Existential Dread Therapy">Existential Dread Therapy 🛋️</option>
-                        <option value="Belly Rub Consultation">Belly Rub Consultation 🐾</option>
-                        <option value="Flea Eviction Notice">Flea Eviction Notice 🪲</option>
-                        <option value="Not Specified">Not Specified</option>
-                    </select>
-                </div>
-                <div class="form-actions">
-                    <button type="button" id="cancel-btn" class="btn secondary-btn">Cancel</button>
-                    <button type="submit" class="btn primary-btn">Save Pet</button>
-                </div>
-            </form>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Paw & Petal</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="login.html" class="btn-primary btn-login">Sign In</a>
         </div>
-    </div>
+    </nav>
 
-    <script src="app.js"></script>
+    <header class="hero" style="background-image: url('images/hero.png');">
+        <div class="hero-glass">
+            <h1>Elevate Your Pet's Lifestyle</h1>
+            <p>Discover our curated collection of premium accessories designed for modern pets and their humans.</p>
+            <a href="#shop" class="btn-primary">Shop Collection</a>
+        </div>
+    </header>
+
+    <section id="shop" class="featured">
+        <h2>Featured Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/acc_1.png" alt="Stylish Minimalist Cat Tree">
+                <h3>Minimalist Cat Studio</h3>
+                <div class="price">$149.00</div>
+            </div>
+            <div class="product-card">
+                <img src="images/acc_2.png" alt="Premium Leather Dog Leash">
+                <h3>Heritage Leather Leash</h3>
+                <div class="price">$89.00</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Paw & Petal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>

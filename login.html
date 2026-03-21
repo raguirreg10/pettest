@@ -3,86 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Pet Manager</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .login-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 80vh;
-        }
-        .login-card {
-            background: var(--card-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            padding: 2.5rem;
-            width: 100%;
-            max-width: 400px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-        .login-header {
-            margin-bottom: 2rem;
-        }
-        .login-header i {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        .login-header h1 {
-            justify-content: center;
-            margin-bottom: 0.5rem;
-        }
-        .login-header p {
-            color: var(--text-muted);
-        }
-        .form-group {
-            text-align: left;
-        }
-        .btn-full {
-            width: 100%;
-            justify-content: center;
-            margin-top: 1.5rem;
-            padding: 0.8rem;
-            font-size: 1rem;
-        }
-    </style>
+    <title>Sign In | Paw & Petal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="app-container login-container">
-        <div class="login-card">
-            <div class="login-header">
-                <i class="fas fa-paw"></i>
-                <h1>Welcome Back</h1>
-                <p>Sign in to manage your furry friends</p>
+<body class="auth-page">
+
+    <!-- Absolute logo positioned to allow navigating back -->
+    <a href="index.html" class="logo" style="position: absolute; top: 30px; left: 50px;">Paw & Petal</a>
+
+    <div class="auth-card">
+        <h2>Welcome Back</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required placeholder="hello@example.com">
             </div>
-            <form id="login-form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" required placeholder="admin">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" required placeholder="••••••••">
-                </div>
-                <button type="submit" class="btn primary-btn btn-full">
-                    <i class="fas fa-sign-in-alt"></i> Sign In
-                </button>
-            </form>
-        </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required placeholder="••••••••">
+            </div>
+            <button type="submit" class="btn-primary btn-full">Sign In</button>
+        </form>
+        <p style="margin-top: 25px; color: #666; font-size: 0.95rem;">
+            Don't have an account? <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 800;">Create one</a>
+        </p>
     </div>
 
-    <script>
-        document.getElementById('login-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Dummy authentication: redirects to main application
-            window.location.href = '/';
-        });
-    </script>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Successfully logged in! Redirecting...</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
